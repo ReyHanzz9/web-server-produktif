@@ -1,0 +1,175 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar {
+    height: 10vh;
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    box-shadow: 0 2px 4px 0 rgba(1, 1, 1, 0.1);
+}
+.navbar h1{
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+.navbar p {
+    cursor: pointer;
+}
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+.hero-container{
+    display: flex;
+    height: 470px;
+    padding: 0 10%;
+}
+.hero-container img {
+    padding-left: 300px;
+}
+.hero-container div {
+    flex: 50%;
+    align-self: center;
+}
+.hero-container h1 {
+    font-size: 50px;
+    color: black;
+}
+.hero-container p {
+    font-size: 18px;
+    color: black;
+}
+.description-container {
+    display: flex;
+    height: 470px;
+    padding: 0 10%;
+}
+.description-container div {
+    flex: 50%;
+    align-self: center;
+    color: black;
+}
+.description-container h1 {
+    font-size: 30px;
+}
+.description-container img {
+    height: 300px;
+    width: 500px;
+    padding-left: 300px;
+    align-self: center;
+}
+.content-container {
+    min-height: 200px;
+    padding: 0 10%;
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.content-container .card {
+    height: 100%;
+
+}
+.card > img {
+    object-fit: cover;
+    height: 200px;
+    width: 900;
+    align-items: center;
+    padding-left: 70px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.1);
+    border-radius: 20px;
+}
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.1);
+    transform: scale(1.1);
+    z-index: 0;
+}
+.card > .card-body {
+    padding: 20px;
+}
+.card h3 {
+    font-size: 20px;
+    color:black;
+    margin: 0px 0px 30px 70px;
+}
+.card .card-footer {
+    display: flex;
+    margin: 0px 50px 0px 100px;
+    cursor: pointer;
+}
+.card .card-footer .button-two {
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color:#f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.card .card-footer .button-two:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+    color: black;
+}
+footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1) {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2) {
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social {
+    display: flex;
+}
+.social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.social a:hover {
+    transform: scale(1.3);
+    transition: .3s;
+}
+.end {
+    position: absolute;
+    color: #f9004d;
+    bottom: 35px;
+    font-size: 14px;
+}
